@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sign Up Form</title>
+    <meta name="description" content="Signup page created using HTML and CSS" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.iconpacks.net/icons/1/free-user-login-icon-305-thumb.png"
+    />
+  </head>
+  <body>
+    <header>Signup</header>
+    <main>
+      <form>
+        <div><input type="text" placeholder="Full Name" required /></div>
+        <div><input type="email" placeholder="Email" required /></div>
+        <div><input type="password" placeholder="Password" required /></div>
+        <div>
+          <input type="password" placeholder="Confirm Password" required />
+        </div>
+        <div><input type="date" required /></div>
+        <div>
+          <input
+            type="radio"
+            name="type"
+            value="Student"
+            id="student"
+            required
+          />
+          <label for="student">Student</label>
+          <input
+            type="radio"
+            name="type"
+            value="Employee"
+            id="employee"
+            required
+          />
+          <label for="employee">Employee</label>
+        </div>
+        <div>
+          <input type="checkbox" name="terms" value="T&C" id="terms" required />
+          <label for="terms">I agree to all the Terms and conditions</label>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <button type="submit">Signup</button>
+    </footer>
+  </body>
+</html>

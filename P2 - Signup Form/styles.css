@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 100px;
+}
+header {
+    font-size: 3em;
+    padding-bottom: 30px;
+}
+div {
+    padding-bottom: 10px;
+}
+input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+    background-color: transparent;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 5px;
+    width: 80%;
+}
+input[type="radio"] {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+input[type="radio"]:checked {
+  background-color: wheat;
+}
+input[type="checkbox"] {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 25%;
+    width: 15px;
+    height: 10px;
+    margin: unset;
+    margin-right: 3px;
+}
+input[type="checkbox"]:checked {
+  background-color: wheat;
+}
+footer {
+    padding-top: 30px;
+}
+button {
+    padding: 10px 40px;
+    font-size: 1em;
+}
