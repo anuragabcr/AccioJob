@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Menu -->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-2 border-end">
+          <div class="menu">
+            <div class="logo">
+              <svg
+                width="103"
+                height="29"
+                viewBox="0 0 103 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_455)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.57116 0.0997054C3.46866 0.978768 1.16678 3.45283 0.441784 6.56127C-0.482591 10.4944 3.35085 12.1528 3.66804 11.6091C4.03053 10.9747 2.97929 10.7572 2.76179 8.70908C2.48991 6.08095 3.71335 3.12658 5.25397 1.83971C5.54397 1.59502 5.52585 1.93033 5.52585 2.54658L5.47147 15.651C5.47147 18.4603 5.35366 19.3394 5.14522 20.2185C4.93678 21.1066 4.60147 21.7047 4.84616 21.9403C5.13616 22.1941 6.36866 21.5778 7.07553 20.581C7.8832 19.349 8.30304 17.9033 8.28085 16.4303C8.34429 14.5635 8.33522 11.6 8.34429 9.91439C8.34429 8.37377 8.37147 3.83346 8.31709 1.10564C8.29897 0.435018 6.44116 -0.262795 5.57116 0.108768V0.0997054ZM80.0015 13.2222C79.9725 14.3979 79.701 15.5549 79.204 16.6206C78.4337 18.1794 76.8205 18.6597 76.1318 16.4213C75.7693 15.2069 75.7421 13.1678 76.014 11.4641C76.2859 9.7422 77.0471 8.42814 78.3068 8.54596C79.5574 8.66377 80.1374 10.2678 80.0015 13.2222ZM59.0218 22.2666C59.0037 24.6863 58.623 26.8069 57.8074 27.4322C56.6383 28.3022 55.0887 27.6406 55.4058 25.8735C55.6868 24.3147 57.0371 22.7197 59.0308 20.7622L59.0218 22.2666ZM58.7046 13.2041C58.6516 14.3823 58.3812 15.5407 57.9071 16.6206C57.1368 18.1794 55.5146 18.6597 54.8349 16.4213C54.3818 14.8897 54.4905 12.9141 54.7171 11.6635C55.0162 10.0503 55.7321 8.54596 57.0099 8.54596C58.2605 8.54596 58.8768 9.90533 58.7046 13.2041ZM46.5518 13.186C46.5288 14.3759 46.2604 15.5483 45.7633 16.6297C44.9658 18.1703 43.3799 18.6597 42.6821 16.4213C42.1837 14.8172 42.3558 12.615 42.5643 11.4369C42.8724 9.66971 43.6518 8.42814 44.8571 8.53689C46.1077 8.66377 46.7058 10.2588 46.5518 13.186ZM102.241 14.8263C101.942 14.8263 101.797 15.1435 101.688 15.6691C101.289 17.4997 100.872 17.9166 100.329 17.9166C99.7305 17.9166 99.1868 17.0103 99.0418 15.1978C98.933 13.766 98.9512 11.1378 99.0962 8.51877C99.1234 7.98408 98.9693 7.45845 97.5283 6.93283C96.9121 6.70627 96.0058 6.37095 95.5618 7.45845C94.6644 9.52767 94.0311 11.7016 93.6768 13.9291C93.6768 13.9835 93.6043 13.9925 93.5862 13.8747C93.5227 13.0863 93.3505 11.6453 93.3324 8.62752C93.3324 8.03846 93.2055 7.54002 92.553 7.13221C92.1271 6.86033 90.8493 6.39814 90.378 6.95096C89.9883 7.40408 89.5262 8.64564 89.0458 10.1047L88.3752 12.0985L88.3843 7.67596C88.3843 7.22283 88.0762 7.06877 87.9765 7.04158C87.4448 6.87758 86.8985 6.76529 86.3452 6.70627C85.9102 6.70627 85.8015 6.95095 85.8015 7.31345C85.8015 7.35877 85.729 11.5275 85.729 14.4456V14.8625C85.4843 16.2038 84.6958 18.0253 83.8349 18.0253C82.974 18.0253 82.5662 17.2641 82.5662 13.7841C82.5662 11.7541 82.6296 10.875 82.6568 9.40689C82.6749 8.55502 82.7112 7.91158 82.7112 7.76658C82.7021 7.31345 81.9227 7.08689 81.5602 6.99627C81.1977 6.91471 80.8715 6.87845 80.6268 6.89658C80.2643 6.9147 80.0196 7.14127 80.0196 7.45845V7.95689C79.6285 7.33828 79.0462 6.86418 78.3612 6.60658C77.0562 6.21689 75.6968 6.56127 74.6727 7.99314C73.7888 9.25758 73.2685 10.7402 73.1684 12.2797C73.0234 13.6391 73.0777 15.0075 73.3224 16.1766C73.0233 17.4816 72.4524 18.0253 71.8362 18.0253C70.939 18.0253 70.2955 16.5572 70.368 14.0378C70.4224 12.3703 70.7487 11.2013 71.1112 9.51564C71.2652 8.79064 71.1474 8.42814 70.8302 8.06564C70.5402 7.73033 69.924 7.55814 69.0268 7.76658C68.3924 7.91158 67.4862 8.07471 66.6705 8.19252C66.6705 8.19252 66.7158 8.0022 66.7612 7.64877C66.9696 5.80908 64.9668 5.95408 64.3233 6.54314C63.9427 6.89658 63.689 7.30439 63.5802 8.05658C63.4262 9.2347 64.3959 9.78752 64.3959 9.78752C63.7731 12.1398 62.7291 14.3598 61.3146 16.3397V15.7053C61.3055 12.6603 61.3418 10.2678 61.3599 9.40689C61.378 8.55502 61.4143 7.92971 61.4143 7.77564C61.4143 7.44939 61.2149 7.32252 60.8162 7.16846C60.4537 7.02346 60.0368 6.93283 59.6018 6.89658C59.058 6.85127 58.7227 7.14127 58.7318 7.48564V7.95689C58.3389 7.3363 57.753 6.8619 57.0643 6.60658C55.7593 6.21689 54.3999 6.56127 53.3758 7.99314C52.5236 9.27024 52.0062 10.7412 51.8715 12.2706C51.7355 13.6935 51.7537 14.8988 51.953 15.9319C51.7446 16.956 51.1465 18.0163 50.4758 18.0163C49.6149 18.0163 49.1165 17.2641 49.1165 13.7841C49.1165 11.7541 49.1799 10.875 49.2071 9.40689C49.2252 8.55502 49.2615 7.91158 49.2615 7.76658C49.2615 7.31345 48.473 7.08689 48.1105 6.99627C47.7299 6.90564 47.3946 6.87846 47.1499 6.90564C46.8146 6.92377 46.579 7.22283 46.579 7.44939V7.95689C46.186 7.3363 45.6002 6.8619 44.9115 6.60658C43.6065 6.21689 42.2562 6.57033 41.223 7.99314C40.5434 8.92658 39.9996 9.95971 39.7187 12.2525C39.6426 12.8658 39.6062 13.4833 39.6099 14.1013C39.338 15.7416 38.1508 17.6356 37.1812 17.6356C36.6102 17.6356 36.0665 16.5391 36.0665 14.1919C36.0665 11.0653 36.2658 6.61564 36.293 6.1897L37.7612 6.16252C38.3774 6.16252 38.9302 6.17158 39.7458 6.12627C40.1537 6.10814 40.5433 4.64002 40.1265 4.45877C39.9362 4.37721 38.5858 4.30471 38.0421 4.29564C37.589 4.28658 36.3383 4.19596 36.3383 4.19596C36.3383 4.19596 36.4562 1.24158 36.4833 0.933455C36.5015 0.66158 36.1662 0.534705 35.9668 0.453143C35.5195 0.273102 35.0548 0.139485 34.5802 0.0543927C33.8915 -0.0815448 33.5834 0.0543926 33.5199 0.634393C33.4293 1.51346 33.384 4.09627 33.384 4.09627C32.8765 4.09627 31.1455 3.99658 30.6471 3.99658C30.1758 3.99658 29.6683 6.00845 30.3208 6.03564L33.2208 6.11721L33.1937 12.035V12.461C32.7133 14.935 31.0458 16.2672 31.0458 16.2672C31.4083 14.636 30.6652 13.4125 29.3512 12.3703C28.8618 11.9897 27.9012 11.2647 26.8227 10.4672C26.8227 10.4672 27.448 9.85096 28.0008 8.61845C28.3905 7.74846 28.4087 6.75158 27.448 6.53408C25.8621 6.16252 24.548 7.32252 24.1583 8.57314C24.0063 8.97798 23.9681 9.41677 24.048 9.84178C24.1279 10.2668 24.3228 10.6618 24.6115 10.9838L24.7474 11.156C24.3849 11.8447 23.8955 12.7691 23.4787 13.4941C22.3277 15.4878 21.4487 17.0738 20.7871 17.0738C20.2615 17.0738 20.2705 15.4697 20.2705 13.9653C20.2705 12.6694 20.3612 10.721 20.4427 8.70908C20.4699 8.03846 20.1346 7.65783 19.5727 7.31345C19.1259 7.00438 18.6198 6.79145 18.0865 6.68814C17.4521 6.68814 15.6396 6.77877 13.9177 11.736C13.7093 12.3613 13.2833 13.4941 13.2833 13.4941L13.3196 7.54002C13.3196 7.39502 13.2471 7.26814 13.0749 7.17752C12.5341 6.89001 11.9374 6.72306 11.3258 6.68814C10.9996 6.68814 10.8365 6.84221 10.8365 7.14127L10.773 16.4756C10.773 17.1825 10.7912 18.0072 10.8637 18.3697C10.9362 18.7322 11.0449 19.0222 11.1899 19.1944C11.3258 19.3756 11.489 19.5025 11.7518 19.5569C12.0055 19.6113 13.3649 19.7835 13.4374 19.2669C13.528 18.6416 13.528 17.971 14.244 15.4606C15.3496 11.5547 16.7996 9.64252 17.4883 8.97189C17.6062 8.84502 17.7421 8.84502 17.733 9.03533L17.5337 13.8566C17.3524 18.7231 18.2405 19.6203 19.5002 19.6203C20.4699 19.6203 21.8383 18.6597 23.3065 16.231L25.7533 12.1528L27.1852 13.476C28.3452 14.5635 28.7258 15.6147 28.4721 16.6025C28.2818 17.3547 27.5477 18.1431 26.2608 17.3819C25.8802 17.1553 25.7171 16.9831 25.3455 16.7385C25.1371 16.6025 24.829 16.5572 24.6387 16.7022C24.1583 17.0647 23.8774 17.536 23.7233 18.1069C23.5693 18.6597 24.1312 18.9588 24.7112 19.2125C25.2096 19.4391 26.288 19.6385 26.9768 19.6656C29.6412 19.7563 31.7799 18.3788 33.2662 14.8263C33.538 17.8894 34.6708 19.6294 36.6374 19.6294C37.9515 19.6294 39.2746 17.9256 39.8546 16.2581C40.0177 16.9378 40.2624 17.5269 40.5796 18.0344C42.1021 20.436 45.0474 19.9103 46.5246 17.8713C46.9777 17.246 47.0502 17.0194 47.0502 17.0194C47.0945 17.7055 47.3912 18.351 47.8832 18.8313C48.3752 19.3115 49.0276 19.5926 49.7146 19.6203C50.7115 19.6203 51.7355 19.1491 52.4605 17.5269C52.5421 17.7081 52.6418 17.8713 52.7324 18.0344C54.2549 20.436 57.2002 19.9103 58.6774 17.8713L58.8587 17.6175L58.904 18.8863L57.5446 20.1278C55.2608 22.2122 53.5208 23.7981 53.394 25.6469C53.2308 28.0031 55.143 28.8731 56.593 28.991C57.3183 29.027 58.04 28.8688 58.6837 28.5327C59.3273 28.1965 59.8695 27.6946 60.2543 27.0788C60.9612 26.0366 61.4324 23.7891 61.3962 21.5688L61.3418 18.3425C63.5126 15.8323 65.1802 12.9278 66.2537 9.78752C66.2537 9.78752 67.0965 9.79658 67.9937 9.7422C68.2837 9.72408 68.3652 9.77846 68.3109 9.98689C68.2474 10.2406 67.178 14.3731 68.1568 17.1281C68.8274 19.0131 70.3318 19.6203 71.238 19.6203C72.2802 19.6203 73.2862 18.8319 73.8208 17.6538L74.0293 18.0344C75.5518 20.436 78.488 19.9103 79.9743 17.8713C80.3096 17.4181 80.4999 17.0194 80.4999 17.0194C80.8262 19.0131 82.3758 19.6294 83.264 19.6294C84.1883 19.6294 85.0765 19.2488 85.7833 17.5631C85.8105 18.3063 85.8558 18.9135 85.9283 19.1038C85.9737 19.2216 86.2365 19.3756 86.4359 19.4391C87.2787 19.7472 88.1396 19.6022 88.4658 19.5388C88.6833 19.4935 88.8555 19.3122 88.8827 18.8591C88.9462 17.6538 88.9099 15.6328 89.2724 14.1375C89.8796 11.6091 90.4505 10.6303 90.7224 10.15C90.8765 9.87814 91.0487 9.83283 91.0577 10.1228C91.0668 10.7028 91.094 12.4066 91.3296 14.6994C91.5108 16.385 91.7465 17.3819 91.9187 17.69C92.4352 18.5963 93.0696 18.6416 93.5771 18.6416C93.9033 18.6416 94.5921 18.551 94.5287 17.98C94.5015 17.6991 94.5468 15.9681 95.163 13.485C95.5527 11.8628 96.2052 10.4038 96.4408 9.86002C96.5315 9.66971 96.5768 9.82377 96.5768 9.86002C96.5224 10.9656 96.4137 14.6178 96.8668 16.6206C97.483 19.3213 99.2683 19.6294 99.8937 19.6294C101.226 19.6294 102.313 18.6144 102.676 15.9591C102.766 15.3247 102.631 14.8263 102.241 14.8263Z"
+                    fill="#262626"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_455">
+                    <rect width="103" height="29" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="items">
+              <div class="item">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_460)">
+                    <path
+                      d="M22 23.0001H15.999C15.7338 23.0001 15.4794 22.8947 15.2919 22.7072C15.1044 22.5196 14.999 22.2653 14.999 22.0001V16.5451C15.0063 16.1469 14.9341 15.7514 14.7868 15.3814C14.6395 15.0115 14.4199 14.6747 14.141 14.3906C13.862 14.1064 13.5292 13.8808 13.162 13.7267C12.7949 13.5727 12.4007 13.4933 12.0025 13.4933C11.6043 13.4933 11.2101 13.5727 10.843 13.7267C10.4758 13.8808 10.143 14.1064 9.86403 14.3906C9.58506 14.6747 9.3655 15.0115 9.21818 15.3814C9.07086 15.7514 8.99873 16.1469 9.006 16.5451V22.0001C9.006 22.2653 8.90064 22.5196 8.71311 22.7072C8.52557 22.8947 8.27122 23.0001 8.006 23.0001H2C1.73478 23.0001 1.48043 22.8947 1.29289 22.7072C1.10536 22.5196 1 22.2653 1 22.0001V11.5431C1.00009 11.4077 1.02761 11.2738 1.08088 11.1493C1.13416 11.0249 1.2121 10.9125 1.31 10.8191L11.31 1.27605C11.4961 1.09899 11.7431 1.00024 12 1.00024C12.2569 1.00024 12.5039 1.09899 12.69 1.27605L22.69 10.8191C22.7879 10.9125 22.8658 11.0249 22.9191 11.1493C22.9724 11.2738 22.9999 11.4077 23 11.5431V22.0001C23 22.2653 22.8946 22.5196 22.7071 22.7072C22.5196 22.8947 22.2652 23.0001 22 23.0001Z"
+                      fill="#262626"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_460">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span><b>Home</b></span>
+              </div>
+              <div class="item">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_467)">
+                    <path
+                      d="M19 10.5C19 12.1811 18.5015 13.8245 17.5675 15.2223C16.6335 16.6202 15.306 17.7096 13.7528 18.353C12.1996 18.9963 10.4906 19.1647 8.84174 18.8367C7.1929 18.5087 5.67834 17.6992 4.4896 16.5104C3.30085 15.3217 2.4913 13.8071 2.16333 12.1583C1.83535 10.5094 2.00368 8.80036 2.64703 7.24719C3.29037 5.69402 4.37984 4.3665 5.77766 3.43251C7.17547 2.49852 8.81886 2 10.5 2C12.7543 2 14.9164 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5Z"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M16.5112 16.511L22.0002 22"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_467">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span>Search</span>
+              </div>
+              <div class="item">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_475)">
+                    <path
+                      d="M13.9411 13.953L7.58105 16.424L10.0601 10.056L16.4201 7.58496L13.9411 13.953Z"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M10.0601 10.056L13.9491 13.945L7.58105 16.424L10.0601 10.056Z"
+                      fill="#262626"
+                    />
+                    <path
+                      d="M12.001 22.505C17.8 22.505 22.501 17.804 22.501 12.005C22.501 6.20602 17.8 1.505 12.001 1.505C6.20199 1.505 1.50098 6.20602 1.50098 12.005C1.50098 17.804 6.20199 22.505 12.001 22.505Z"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_475">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <span>Explore</span>
+              </div>
+              <div class="item">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_484)">
+                    <path
+                      d="M2.04883 7.00195H21.9498"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.5039 2.00098L16.3619 7.00198"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M7.20703 2.10999L10.002 7.00199"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M2 12.001V15.45C2 18.299 2.698 19.456 3.606 20.395C4.546 21.303 5.704 22.002 8.552 22.002H15.448C18.296 22.002 19.454 21.303 20.394 20.395C21.302 19.456 22 18.299 22 15.45V8.552C22 5.704 21.302 4.546 20.394 3.607C19.454 2.699 18.296 2 15.448 2H8.552C5.704 2 4.546 2.699 3.606 3.607C2.698 4.546 2 5.704 2 8.552V12.001Z"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M9.76308 17.664C9.62495 17.5843 9.51027 17.4696 9.43057 17.3314C9.35087 17.1933 9.30897 17.0365 9.30908 16.877V11.63C9.30889 11.4703 9.35078 11.3134 9.43053 11.175C9.51029 11.0367 9.62508 10.9218 9.76337 10.8419C9.90165 10.762 10.0585 10.7199 10.2182 10.72C10.378 10.72 10.5348 10.7621 10.6731 10.842L15.2181 13.466C15.3564 13.5458 15.4713 13.6606 15.5511 13.7988C15.631 13.937 15.6731 14.0939 15.6731 14.2535C15.6731 14.4132 15.631 14.57 15.5511 14.7083C15.4713 14.8465 15.3564 14.9613 15.2181 15.041L10.6731 17.665C10.5347 17.7449 10.3778 17.787 10.2181 17.787C10.0583 17.787 9.90142 17.7449 9.76308 17.665V17.664Z"
+                      fill="#262626"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_484">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <span>Reels</span>
+              </div>
+              <div class="item">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_495)">
+                    <path
+                      d="M12.0032 2.00098C13.3032 1.95924 14.5984 2.17924 15.8117 2.64792C17.025 3.11661 18.1318 3.8244 19.0661 4.72925C20.0005 5.63411 20.7435 6.71755 21.2508 7.91521C21.7582 9.11286 22.0197 10.4003 22.0197 11.701C22.0197 13.0017 21.7582 14.2891 21.2508 15.4868C20.7435 16.6844 20.0005 17.7679 19.0661 18.6727C18.1318 19.5776 17.025 20.2854 15.8117 20.754C14.5984 21.2227 13.3032 21.4427 12.0032 21.401C11.0253 21.4037 10.0515 21.2745 9.1082 21.017C8.93122 20.9687 8.74299 20.9828 8.5752 21.057L6.5912 21.933C6.47124 21.9857 6.34016 22.0082 6.20947 21.9985C6.07878 21.9888 5.95247 21.9472 5.84162 21.8773C5.73076 21.8074 5.63875 21.7114 5.57364 21.5977C5.50854 21.4839 5.47233 21.356 5.4682 21.225L5.4142 19.445C5.40969 19.3369 5.38346 19.2308 5.33708 19.133C5.29069 19.0353 5.22509 18.9478 5.1442 18.876C4.14037 17.9723 3.341 16.8649 2.7995 15.6275C2.25801 14.3902 1.98686 13.0515 2.0042 11.701C1.9966 10.3995 2.25234 9.10999 2.75603 7.90993C3.25972 6.70987 4.00096 5.6241 4.93515 4.71794C5.86934 3.81178 6.97717 3.10395 8.19201 2.63703C9.40685 2.17011 10.7026 1.95376 12.0032 2.00098Z"
+                      stroke="#262626"
+                      stroke-width="1.739"
+                      stroke-miterlimit="10"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M17.7901 10.132C17.8736 10.0008 17.9081 9.8444 17.8875 9.6903C17.8668 9.5362 17.7923 9.39437 17.6772 9.28989C17.562 9.1854 17.4137 9.12499 17.2583 9.11933C17.1029 9.11368 16.9505 9.16314 16.8281 9.25897L14.2721 11.309C14.1631 11.3915 14.0302 11.4364 13.8934 11.4367C13.7567 11.4371 13.6235 11.3929 13.5141 11.311L11.0601 9.46998C10.886 9.33963 10.6868 9.24673 10.4751 9.19712C10.2633 9.14752 10.0436 9.14227 9.82969 9.18172C9.61581 9.22117 9.41242 9.30446 9.2323 9.42635C9.05218 9.54824 8.89924 9.7061 8.7831 9.88998L6.2161 13.87C6.13181 14.001 6.09667 14.1576 6.11691 14.3121C6.13716 14.4666 6.21147 14.6089 6.32666 14.7138C6.44185 14.8187 6.59048 14.8793 6.74617 14.8851C6.90185 14.8908 7.05453 14.8411 7.1771 14.745L9.7331 12.696C9.8422 12.6132 9.97531 12.5682 10.1123 12.5678C10.2492 12.5675 10.3826 12.6118 10.4921 12.694L12.9441 14.534C13.1182 14.6645 13.3175 14.7575 13.5293 14.8072C13.7412 14.8569 13.9611 14.8622 14.1751 14.8228C14.3891 14.7833 14.5926 14.7 14.7728 14.578C14.953 14.456 15.106 14.298 15.2221 14.114L17.7901 10.132Z"
+                      fill="#262626"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_495">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <span>Messages</span>
+              </div>
+              <div class="item">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_503)">
+                    <path
+                      d="M16.7922 3.90397C18.1066 3.97664 19.339 4.56587 20.2209 5.54328C21.1028 6.52068 21.5626 7.80701 21.5002 9.12197C21.5002 12.194 18.8482 14.081 16.3032 16.344C13.7912 18.587 12.4382 19.813 12.0002 20.096C11.5232 19.787 9.85717 18.273 7.69717 16.344C5.14117 14.072 2.50017 12.167 2.50017 9.12197C2.43773 7.80701 2.89755 6.52068 3.77943 5.54328C4.6613 4.56587 5.89373 3.97664 7.20817 3.90397C7.93631 3.8819 8.65772 4.04915 9.30188 4.38937C9.94603 4.72959 10.4909 5.23113 10.8832 5.84497C11.7232 7.01997 11.8632 7.60797 12.0032 7.60797C12.1432 7.60797 12.2812 7.01997 13.1132 5.84197C13.5032 5.22529 14.0483 4.72176 14.6939 4.38169C15.3395 4.04161 16.063 3.87688 16.7922 3.90397ZM16.7922 1.90397C15.8841 1.8749 14.9812 2.05106 14.1506 2.41932C13.3201 2.78759 12.5833 3.33848 11.9952 4.03097C11.4075 3.3405 10.6723 2.79088 9.84371 2.42272C9.01515 2.05457 8.11445 1.87729 7.20817 1.90397C5.36304 1.97612 3.62155 2.77596 2.36451 4.12857C1.10747 5.48118 0.43716 7.27651 0.500165 9.12197C0.500165 12.732 3.05017 14.949 5.51517 17.092C5.79817 17.338 6.08417 17.586 6.36817 17.839L7.39517 18.757C8.51521 19.8227 9.68943 20.8301 10.9132 21.775C11.2369 21.9846 11.6144 22.0962 12.0002 22.0962C12.3859 22.0962 12.7634 21.9846 13.0872 21.775C14.3499 20.8012 15.5602 19.7614 16.7132 18.66L17.6352 17.836C17.9282 17.576 18.2252 17.317 18.5202 17.062C20.8542 15.037 23.5002 12.742 23.5002 9.12197C23.5632 7.27651 22.8929 5.48118 21.6358 4.12857C20.3788 2.77596 18.6373 1.97612 16.7922 1.90397Z"
+                      fill="#262626"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_503">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <span>Notifications</span>
+              </div>
+              <div class="item">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_510)">
+                    <path
+                      d="M2 12V15.45C2 18.299 2.698 19.455 3.606 20.394C4.546 21.303 5.704 22.002 8.552 22.002H15.448C18.296 22.002 19.454 21.302 20.394 20.394C21.302 19.455 22 18.3 22 15.45V8.552C22 5.703 21.302 4.546 20.394 3.607C19.454 2.7 18.296 2 15.448 2H8.552C5.704 2 4.546 2.699 3.606 3.607C2.698 4.547 2 5.703 2 8.552V12Z"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.54492 12.001H17.4549"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.0029 6.54504V17.455"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_510">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <span>Create</span>
+              </div>
+              <div class="item">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g clip-path="url(#clip0_1_519)">
+                    <rect width="24" height="24" rx="12" fill="#FAFAFA" />
+                    <rect width="24" height="24" fill="url(#pattern0_1_519)" />
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="23"
+                      height="23"
+                      rx="11.5"
+                      stroke="black"
+                      stroke-opacity="0.098"
+                    />
+                  </g>
+                  <defs>
+                    <pattern
+                      id="pattern0_1_519"
+                      patternContentUnits="objectBoundingBox"
+                      width="1"
+                      height="1"
+                    >
+                      <use
+                        xlink:href="#image0_1_519"
+                        transform="scale(0.00666667)"
+                      />
+                    </pattern>
+                    <clipPath id="clip0_1_519">
+                      <rect width="24" height="24" rx="12" fill="white" />
+                    </clipPath>
+                    <image
+                      id="image0_1_519"
+                      width="150"
+                      height="150"
+                      xlink:href="data:image/jpeg;base64,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"
+                    />
+                  </defs>
+                </svg>
+
+                <span>Profile</span>
+              </div>
+              <div class="item">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_526)">
+                    <path
+                      d="M3 4H21"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3 12H21"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M3 20H21"
+                      stroke="#262626"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_526">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <span>More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="feed">
+            <div class="stories">
+              <div class="story">
+                <img
+                  src="https://rukminim2.flixcart.com/image/850/1000/kyhlfgw0/poster/t/q/q/small-cute-siberian-husky-dog-poster-multicolor-photo-paper-original-imagapextyjsppfy.jpeg?q=90&crop=false"
+                  alt=""
+                />
+                <p>Husky</p>
+              </div>
+              <div class="story">
+                <img
+                  src="https://hips.hearstapps.com/hmg-prod/images/labrador-puppy-royalty-free-image-1626252338.jpg?crop=0.667xw:1.00xh;0.173xw,0&resize=2048:*"
+                  alt=""
+                />
+                <p>Labrador</p>
+              </div>
+              <div class="story">
+                <img
+                  src="https://www.looper.com/img/gallery/see-aquamans-jason-momoa-as-kratos-in-live-action-god-of-war-design/intro-1693326931.jpg"
+                  alt=""
+                />
+                <p>Kratos</p>
+              </div>
+              <div class="story">
+                <img src="https://i.redd.it/7gz8g8flxeg61.jpg" alt="" />
+                <p>Arthur</p>
+              </div>
+              <div class="story">
+                <img
+                  src="https://media.wired.com/photos/621e76d000c61db612b05fd8/master/pass/Games-Horizon-Forbidden-West-Review-top.jpg"
+                  alt=""
+                />
+                <p>Aloy</p>
+              </div>
+              <div class="story">
+                <img
+                  src="https://assetsio.gnwcdn.com/the_witcher_3_wild_hunt_tedd_deireadh_the_final_age.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp"
+                  alt=""
+                />
+                <p>Geralt</p>
+              </div>
+            </div>
+            <div class="posts">
+              <div class="post border-bottom">
+                <div class="user">
+                  <div class="post-info">
+                    <img
+                      class="user-img"
+                      src="https://www.giantbomb.com/a/uploads/scale_medium/13/135472/3023772-1409284066-latest"
+                      alt=""
+                    />
+                    <span><b>Kara</b></span>
+                    <img
+                      class="verified"
+                      src="https://cdn-icons-png.flaticon.com/512/7641/7641727.png"
+                      alt=""
+                    />
+                    <img
+                      class="dot"
+                      src="https://i.pinimg.com/736x/63/9f/f2/639ff23f2fa0d07258f8d6290136d918.jpg"
+                      alt=""
+                    />
+                    <span style="color: gray">5h</span>
+                  </div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_81)">
+                      <path
+                        d="M12 13.5C12.8284 13.5 13.5 12.8284 13.5 12C13.5 11.1716 12.8284 10.5 12 10.5C11.1716 10.5 10.5 11.1716 10.5 12C10.5 12.8284 11.1716 13.5 12 13.5Z"
+                        fill="#262626"
+                      />
+                      <path
+                        d="M6 13.5C6.82843 13.5 7.5 12.8284 7.5 12C7.5 11.1716 6.82843 10.5 6 10.5C5.17157 10.5 4.5 11.1716 4.5 12C4.5 12.8284 5.17157 13.5 6 13.5Z"
+                        fill="#262626"
+                      />
+                      <path
+                        d="M18 13.5C18.8284 13.5 19.5 12.8284 19.5 12C19.5 11.1716 18.8284 10.5 18 10.5C17.1716 10.5 16.5 11.1716 16.5 12C16.5 12.8284 17.1716 13.5 18 13.5Z"
+                        fill="#262626"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_81">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <img
+                  class="post-img"
+                  src="https://s3-alpha-sig.figma.com/img/82bf/6f81/904c1184bf7226524b14d64dd0d56731?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eTtqn5fa0c4MXzv9ua9cRoOpLyusEfc9~w3RXqwWNARV2cA5kRh6F4K5B8TWTXZJRjkofE32OoaH6nV88l5cEkqSUq4HWGAKtZXzdPFXQRNaEmkqaIVlqIc3MtDk0l1pLpTOZr2oso4zTJ0VKJM~xNHjIhXQszBf~d51ZjmARaaz-kVTqEe8bWFIlK1jhcwpt2Hk0cct3zUhXvn-RHdnojpSsaampuwn5IVzv3prPJj6z3O9cSkbFeuJbChmD7G3MEPwO-LXVpFaqh3VvBbTQRaKwLFlHCmkyioy9cGEcnecRdiNrTneENtYCzplthxad7WChNR3eu9N-Tyo39HBuw__"
+                  alt=""
+                />
+                <div class="icons">
+                  <div class="left-icons">
+                    <img
+                      src="https://cdn-icons-png.freepik.com/256/1077/1077035.png?semt=ais_hybrid"
+                      alt=""
+                    />
+                    <img
+                      src="https://cdn-icons-png.freepik.com/256/2/2043.png?semt=ais_hybrid"
+                      alt=""
+                    />
+                    <img
+                      src="https://static.thenounproject.com/png/3861743-200.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="right-icons">
+                    <img
+                      src="https://i.pinimg.com/736x/53/53/4a/53534aa10681e044afadc9966183b24a.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="contents">
+                  <p><b>1231123 likes</b></p>
+                  <p><b>Kara</b> Detroit: Become Human</p>
+                  <p><b>See translation</b></p>
+                  <p style="color: gray">View all 13,384 comments</p>
+                  <div class="d-flex justify-content-between">
+                    <p>Add a comment…</p>
+                    <svg
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.57475 6.45671C8.44973 6.45671 8.32751 6.49378 8.22356 6.56324C8.11961 6.6327 8.03859 6.73143 7.99074 6.84693C7.9429 6.96244 7.93038 7.08954 7.95477 7.21216C7.97916 7.33478 8.03936 7.44741 8.12777 7.53582C8.21617 7.62422 8.32881 7.68442 8.45143 7.70882C8.57405 7.73321 8.70115 7.72069 8.81665 7.67284C8.93216 7.625 9.03088 7.54398 9.10034 7.44003C9.1698 7.33607 9.20687 7.21386 9.20687 7.08884C9.20687 6.92119 9.14028 6.7604 9.02173 6.64186C8.90318 6.52331 8.7424 6.45671 8.57475 6.45671ZM5.05392 7.08884C5.05392 6.96379 5.01683 6.84155 4.94735 6.73759C4.87786 6.63363 4.77911 6.55261 4.66357 6.50478C4.54803 6.45695 4.4209 6.44446 4.29827 6.4689C4.17563 6.49333 4.063 6.55359 3.97462 6.64205C3.88624 6.73051 3.82608 6.84319 3.80175 6.96585C3.77742 7.0885 3.79001 7.21562 3.83794 7.33112C3.88587 7.44661 3.96697 7.5453 4.071 7.61469C4.17502 7.68409 4.29729 7.72107 4.42233 7.72096C4.58989 7.72082 4.75053 7.65416 4.86896 7.53562C4.98739 7.41709 5.05392 7.25639 5.05392 7.08884ZM7.85054 8.84384C7.67817 9.0292 7.46951 9.17711 7.23752 9.27837C7.00554 9.37963 6.75519 9.43207 6.50207 9.43242C6.24895 9.43278 5.99847 9.38105 5.7662 9.28044C5.53393 9.17983 5.32484 9.03251 5.15196 8.84763C5.06174 8.73579 4.93079 8.66437 4.78791 8.64908C4.64504 8.63379 4.50194 8.67589 4.3901 8.76611C4.27826 8.85633 4.20685 8.98728 4.19156 9.13015C4.17627 9.27303 4.21836 9.41612 4.30858 9.52796C4.58291 9.83853 4.92012 10.0872 5.29786 10.2576C5.67561 10.4279 6.08525 10.516 6.49962 10.516C6.914 10.516 7.32364 10.4279 7.70139 10.2576C8.07913 10.0872 8.41634 9.83853 8.69067 9.52796C8.77731 9.41622 8.81683 9.27504 8.80078 9.13456C8.78473 8.99408 8.71439 8.86544 8.60478 8.77612C8.49516 8.6868 8.35497 8.64389 8.21414 8.65654C8.07332 8.66919 7.94302 8.73641 7.85108 8.84384H7.85054ZM6.50017 0.772461C5.26815 0.772461 4.06381 1.1378 3.03943 1.82226C2.01504 2.50673 1.21664 3.4796 0.745166 4.61783C0.273695 5.75606 0.150337 7.00854 0.390691 8.21688C0.631044 9.42522 1.22432 10.5351 2.09548 11.4063C2.96664 12.2775 4.07658 12.8707 5.28492 13.1111C6.49326 13.3515 7.74573 13.2281 8.88396 12.7566C10.0222 12.2852 10.9951 11.4867 11.6795 10.4624C12.364 9.43799 12.7293 8.23364 12.7293 7.00163C12.7275 5.35012 12.0706 3.76679 10.9028 2.599C9.735 1.43121 8.15167 0.774325 6.50017 0.772461ZM6.50017 12.1475C5.48242 12.1475 4.48752 11.8457 3.64129 11.2802C2.79507 10.7148 2.13551 9.91113 1.74604 8.97085C1.35656 8.03057 1.25466 6.99592 1.45321 5.99773C1.65176 4.99953 2.14185 4.08263 2.86151 3.36297C3.58117 2.64332 4.49807 2.15322 5.49626 1.95467C6.49446 1.75612 7.52911 1.85802 8.46939 2.2475C9.40967 2.63697 10.2133 3.29653 10.7788 4.14276C11.3442 4.98898 11.646 5.98388 11.646 7.00163C11.6446 8.36595 11.102 9.67398 10.1372 10.6387C9.17252 11.6034 7.86449 12.146 6.50017 12.1475Z"
+                        fill="#8E8E8E"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="post border-bottom">
+                <div class="user">
+                  <div class="post-info">
+                    <img
+                      class="user-img"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg7-BfwMhosfkaQWSHffBkidPSpSV0qPTmI5Zcn4Skuw&s"
+                      alt=""
+                    />
+                    <span><b>Markus</b></span>
+                    <img
+                      class="verified"
+                      src="https://cdn-icons-png.flaticon.com/512/7641/7641727.png"
+                      alt=""
+                    />
+                    <img
+                      class="dot"
+                      src="https://i.pinimg.com/736x/63/9f/f2/639ff23f2fa0d07258f8d6290136d918.jpg"
+                      alt=""
+                    />
+                    <span style="color: gray">15h</span>
+                  </div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_81)">
+                      <path
+                        d="M12 13.5C12.8284 13.5 13.5 12.8284 13.5 12C13.5 11.1716 12.8284 10.5 12 10.5C11.1716 10.5 10.5 11.1716 10.5 12C10.5 12.8284 11.1716 13.5 12 13.5Z"
+                        fill="#262626"
+                      />
+                      <path
+                        d="M6 13.5C6.82843 13.5 7.5 12.8284 7.5 12C7.5 11.1716 6.82843 10.5 6 10.5C5.17157 10.5 4.5 11.1716 4.5 12C4.5 12.8284 5.17157 13.5 6 13.5Z"
+                        fill="#262626"
+                      />
+                      <path
+                        d="M18 13.5C18.8284 13.5 19.5 12.8284 19.5 12C19.5 11.1716 18.8284 10.5 18 10.5C17.1716 10.5 16.5 11.1716 16.5 12C16.5 12.8284 17.1716 13.5 18 13.5Z"
+                        fill="#262626"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_81">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <img
+                  class="post-img"
+                  src="https://s3-alpha-sig.figma.com/img/f996/fe8f/efb4b5f6ec5067662e18c0ee1177fee7?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kMV9gW16PEiE6vnk4pO4YHi~Vf0z1~xeV2ZCDjj27lRJtM5IjZjzBwB0tPIZdDdTGwSQ3FRqhVQmnN2Jp4dhdEsfUAEvRSw0TSR7L9eaasYvtqtk19pqgnJCL8RT1EPjGaVCkRUBqGLPGwTgZFvu1c6TT5vVfZ-axl1leqo~lN9Z4u1SaeEib8G0Bz7MxgYKBnmy~-sZfhqjns9myp4SReHmGP8BfQgHfu8rl-BQP3SlsELmZdV2GVQJPTUluF-lD25K2BldfdxTaNM~XwfFvP0loyDk~rezBPxLTqvkgD~SgqzRPcqh4KqXco6GZECZfAI~mBokd~IUWhpL5TF6ww__"
+                  alt=""
+                />
+                <div class="icons">
+                  <div class="left-icons">
+                    <img
+                      src="https://cdn-icons-png.freepik.com/256/1077/1077035.png?semt=ais_hybrid"
+                      alt=""
+                    />
+                    <img
+                      src="https://cdn-icons-png.freepik.com/256/2/2043.png?semt=ais_hybrid"
+                      alt=""
+                    />
+                    <img
+                      src="https://static.thenounproject.com/png/3861743-200.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="right-icons">
+                    <img
+                      src="https://i.pinimg.com/736x/53/53/4a/53534aa10681e044afadc9966183b24a.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="contents">
+                  <p><b>1231123 likes</b></p>
+                  <p><b>Markus</b> Detroit: Become Human</p>
+                  <p><b>See translation</b></p>
+                  <p style="color: gray">View all 13,384 comments</p>
+                  <div class="d-flex justify-content-between">
+                    <p>Add a comment…</p>
+                    <svg
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.57475 6.45671C8.44973 6.45671 8.32751 6.49378 8.22356 6.56324C8.11961 6.6327 8.03859 6.73143 7.99074 6.84693C7.9429 6.96244 7.93038 7.08954 7.95477 7.21216C7.97916 7.33478 8.03936 7.44741 8.12777 7.53582C8.21617 7.62422 8.32881 7.68442 8.45143 7.70882C8.57405 7.73321 8.70115 7.72069 8.81665 7.67284C8.93216 7.625 9.03088 7.54398 9.10034 7.44003C9.1698 7.33607 9.20687 7.21386 9.20687 7.08884C9.20687 6.92119 9.14028 6.7604 9.02173 6.64186C8.90318 6.52331 8.7424 6.45671 8.57475 6.45671ZM5.05392 7.08884C5.05392 6.96379 5.01683 6.84155 4.94735 6.73759C4.87786 6.63363 4.77911 6.55261 4.66357 6.50478C4.54803 6.45695 4.4209 6.44446 4.29827 6.4689C4.17563 6.49333 4.063 6.55359 3.97462 6.64205C3.88624 6.73051 3.82608 6.84319 3.80175 6.96585C3.77742 7.0885 3.79001 7.21562 3.83794 7.33112C3.88587 7.44661 3.96697 7.5453 4.071 7.61469C4.17502 7.68409 4.29729 7.72107 4.42233 7.72096C4.58989 7.72082 4.75053 7.65416 4.86896 7.53562C4.98739 7.41709 5.05392 7.25639 5.05392 7.08884ZM7.85054 8.84384C7.67817 9.0292 7.46951 9.17711 7.23752 9.27837C7.00554 9.37963 6.75519 9.43207 6.50207 9.43242C6.24895 9.43278 5.99847 9.38105 5.7662 9.28044C5.53393 9.17983 5.32484 9.03251 5.15196 8.84763C5.06174 8.73579 4.93079 8.66437 4.78791 8.64908C4.64504 8.63379 4.50194 8.67589 4.3901 8.76611C4.27826 8.85633 4.20685 8.98728 4.19156 9.13015C4.17627 9.27303 4.21836 9.41612 4.30858 9.52796C4.58291 9.83853 4.92012 10.0872 5.29786 10.2576C5.67561 10.4279 6.08525 10.516 6.49962 10.516C6.914 10.516 7.32364 10.4279 7.70139 10.2576C8.07913 10.0872 8.41634 9.83853 8.69067 9.52796C8.77731 9.41622 8.81683 9.27504 8.80078 9.13456C8.78473 8.99408 8.71439 8.86544 8.60478 8.77612C8.49516 8.6868 8.35497 8.64389 8.21414 8.65654C8.07332 8.66919 7.94302 8.73641 7.85108 8.84384H7.85054ZM6.50017 0.772461C5.26815 0.772461 4.06381 1.1378 3.03943 1.82226C2.01504 2.50673 1.21664 3.4796 0.745166 4.61783C0.273695 5.75606 0.150337 7.00854 0.390691 8.21688C0.631044 9.42522 1.22432 10.5351 2.09548 11.4063C2.96664 12.2775 4.07658 12.8707 5.28492 13.1111C6.49326 13.3515 7.74573 13.2281 8.88396 12.7566C10.0222 12.2852 10.9951 11.4867 11.6795 10.4624C12.364 9.43799 12.7293 8.23364 12.7293 7.00163C12.7275 5.35012 12.0706 3.76679 10.9028 2.599C9.735 1.43121 8.15167 0.774325 6.50017 0.772461ZM6.50017 12.1475C5.48242 12.1475 4.48752 11.8457 3.64129 11.2802C2.79507 10.7148 2.13551 9.91113 1.74604 8.97085C1.35656 8.03057 1.25466 6.99592 1.45321 5.99773C1.65176 4.99953 2.14185 4.08263 2.86151 3.36297C3.58117 2.64332 4.49807 2.15322 5.49626 1.95467C6.49446 1.75612 7.52911 1.85802 8.46939 2.2475C9.40967 2.63697 10.2133 3.29653 10.7788 4.14276C11.3442 4.98898 11.646 5.98388 11.646 7.00163C11.6446 8.36595 11.102 9.67398 10.1372 10.6387C9.17252 11.6034 7.86449 12.146 6.50017 12.1475Z"
+                        fill="#8E8E8E"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="Suggestions">
+                <div class="cards">
+                  <div class="card">
+                    <div
+                      class="d-flex justify-content-between"
+                      style="width: 90%"
+                    >
+                      <div></div>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <img
+                      src="https://w0.peakpx.com/wallpaper/628/732/HD-wallpaper-video-game-detroit-become-human.jpg"
+                      alt=""
+                    />
+                    <span class="pt-3">Alice</span>
+                    <span class="pb-3" style="color: gray">Follows You</span>
+                    <button class="btn btn-primary">Follow</button>
+                  </div>
+                  <div class="card">
+                    <div
+                      class="d-flex justify-content-between"
+                      style="width: 90%"
+                    >
+                      <div></div>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <img
+                      src="https://w0.peakpx.com/wallpaper/628/732/HD-wallpaper-video-game-detroit-become-human.jpg"
+                      alt=""
+                    />
+                    <span class="pt-3">Alice</span>
+                    <span class="pb-3" style="color: gray">Follows You</span>
+                    <button class="btn btn-primary">Follow</button>
+                  </div>
+                  <div class="card">
+                    <div
+                      class="d-flex justify-content-between"
+                      style="width: 90%"
+                    >
+                      <div></div>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <img
+                      src="https://w0.peakpx.com/wallpaper/628/732/HD-wallpaper-video-game-detroit-become-human.jpg"
+                      alt=""
+                    />
+                    <span class="pt-3">Alice</span>
+                    <span class="pb-3" style="color: gray">Follows You</span>
+                    <button class="btn btn-primary">Follow</button>
+                  </div>
+                </div>
+              </div>
+              <div class="post border-top">
+                <div class="user">
+                  <div class="post-info">
+                    <img
+                      class="user-img"
+                      src="https://cdn.vox-cdn.com/thumbor/ewoYWBq9MauLxB7FULwq5OIUCe4=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/13636275/5fcb5d66f7f4077ad9f392e8b8fb61c4.jpg"
+                      alt=""
+                    />
+                    <span><b>Connor</b></span>
+                    <img
+                      class="verified"
+                      src="https://cdn-icons-png.flaticon.com/512/7641/7641727.png"
+                      alt=""
+                    />
+                    <img
+                      class="dot"
+                      src="https://i.pinimg.com/736x/63/9f/f2/639ff23f2fa0d07258f8d6290136d918.jpg"
+                      alt=""
+                    />
+                    <span style="color: gray">21h</span>
+                  </div>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_81)">
+                      <path
+                        d="M12 13.5C12.8284 13.5 13.5 12.8284 13.5 12C13.5 11.1716 12.8284 10.5 12 10.5C11.1716 10.5 10.5 11.1716 10.5 12C10.5 12.8284 11.1716 13.5 12 13.5Z"
+                        fill="#262626"
+                      />
+                      <path
+                        d="M6 13.5C6.82843 13.5 7.5 12.8284 7.5 12C7.5 11.1716 6.82843 10.5 6 10.5C5.17157 10.5 4.5 11.1716 4.5 12C4.5 12.8284 5.17157 13.5 6 13.5Z"
+                        fill="#262626"
+                      />
+                      <path
+                        d="M18 13.5C18.8284 13.5 19.5 12.8284 19.5 12C19.5 11.1716 18.8284 10.5 18 10.5C17.1716 10.5 16.5 11.1716 16.5 12C16.5 12.8284 17.1716 13.5 18 13.5Z"
+                        fill="#262626"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_81">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <img
+                  class="post-img"
+                  src="https://s3-alpha-sig.figma.com/img/d64f/4876/5b624f8802a0be962466928bdce04dce?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JWGpINaPWoewh3dx9U4JJ-M~T49wBJ-sWiAsRdE9jQVcFB~3wrsqeDeWyJspJzcXugw19jdcuXQhE22VI1flPIf8e~tCDEGG8ymrGFTyq0ig5uIDbSH~YX83unME1RybyXcXCm709uUAs8AzTWK65q4gyAmop9qRJLal65FUT7qKco5d6UzdH9oHuQrqPAhZ-FaUSXD99P-kuOeVr2LWTLXs35r0PYy9HTdwfCHyFhqsQu83tZhvsf0ye8EHs~gwelmqXqHIM6XH7ROBc-uMEmAOv1dQJfDODeNXcKaxfApGqRv~ZNfthrcLT-OvW~IOGfx5RknZ2QHsJ4M6sDXNiw__"
+                  alt=""
+                />
+                <div class="icons">
+                  <div class="left-icons">
+                    <img
+                      src="https://cdn-icons-png.freepik.com/256/1077/1077035.png?semt=ais_hybrid"
+                      alt=""
+                    />
+                    <img
+                      src="https://cdn-icons-png.freepik.com/256/2/2043.png?semt=ais_hybrid"
+                      alt=""
+                    />
+                    <img
+                      src="https://static.thenounproject.com/png/3861743-200.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="right-icons">
+                    <img
+                      src="https://i.pinimg.com/736x/53/53/4a/53534aa10681e044afadc9966183b24a.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="contents">
+                  <p><b>1231123 likes</b></p>
+                  <p><b>Connor</b> Detroit: Become Human</p>
+                  <p><b>See translation</b></p>
+                  <p style="color: gray">View all 13,384 comments</p>
+                  <div class="d-flex justify-content-between">
+                    <p>Add a comment…</p>
+                    <svg
+                      width="13"
+                      height="14"
+                      viewBox="0 0 13 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.57475 6.45671C8.44973 6.45671 8.32751 6.49378 8.22356 6.56324C8.11961 6.6327 8.03859 6.73143 7.99074 6.84693C7.9429 6.96244 7.93038 7.08954 7.95477 7.21216C7.97916 7.33478 8.03936 7.44741 8.12777 7.53582C8.21617 7.62422 8.32881 7.68442 8.45143 7.70882C8.57405 7.73321 8.70115 7.72069 8.81665 7.67284C8.93216 7.625 9.03088 7.54398 9.10034 7.44003C9.1698 7.33607 9.20687 7.21386 9.20687 7.08884C9.20687 6.92119 9.14028 6.7604 9.02173 6.64186C8.90318 6.52331 8.7424 6.45671 8.57475 6.45671ZM5.05392 7.08884C5.05392 6.96379 5.01683 6.84155 4.94735 6.73759C4.87786 6.63363 4.77911 6.55261 4.66357 6.50478C4.54803 6.45695 4.4209 6.44446 4.29827 6.4689C4.17563 6.49333 4.063 6.55359 3.97462 6.64205C3.88624 6.73051 3.82608 6.84319 3.80175 6.96585C3.77742 7.0885 3.79001 7.21562 3.83794 7.33112C3.88587 7.44661 3.96697 7.5453 4.071 7.61469C4.17502 7.68409 4.29729 7.72107 4.42233 7.72096C4.58989 7.72082 4.75053 7.65416 4.86896 7.53562C4.98739 7.41709 5.05392 7.25639 5.05392 7.08884ZM7.85054 8.84384C7.67817 9.0292 7.46951 9.17711 7.23752 9.27837C7.00554 9.37963 6.75519 9.43207 6.50207 9.43242C6.24895 9.43278 5.99847 9.38105 5.7662 9.28044C5.53393 9.17983 5.32484 9.03251 5.15196 8.84763C5.06174 8.73579 4.93079 8.66437 4.78791 8.64908C4.64504 8.63379 4.50194 8.67589 4.3901 8.76611C4.27826 8.85633 4.20685 8.98728 4.19156 9.13015C4.17627 9.27303 4.21836 9.41612 4.30858 9.52796C4.58291 9.83853 4.92012 10.0872 5.29786 10.2576C5.67561 10.4279 6.08525 10.516 6.49962 10.516C6.914 10.516 7.32364 10.4279 7.70139 10.2576C8.07913 10.0872 8.41634 9.83853 8.69067 9.52796C8.77731 9.41622 8.81683 9.27504 8.80078 9.13456C8.78473 8.99408 8.71439 8.86544 8.60478 8.77612C8.49516 8.6868 8.35497 8.64389 8.21414 8.65654C8.07332 8.66919 7.94302 8.73641 7.85108 8.84384H7.85054ZM6.50017 0.772461C5.26815 0.772461 4.06381 1.1378 3.03943 1.82226C2.01504 2.50673 1.21664 3.4796 0.745166 4.61783C0.273695 5.75606 0.150337 7.00854 0.390691 8.21688C0.631044 9.42522 1.22432 10.5351 2.09548 11.4063C2.96664 12.2775 4.07658 12.8707 5.28492 13.1111C6.49326 13.3515 7.74573 13.2281 8.88396 12.7566C10.0222 12.2852 10.9951 11.4867 11.6795 10.4624C12.364 9.43799 12.7293 8.23364 12.7293 7.00163C12.7275 5.35012 12.0706 3.76679 10.9028 2.599C9.735 1.43121 8.15167 0.774325 6.50017 0.772461ZM6.50017 12.1475C5.48242 12.1475 4.48752 11.8457 3.64129 11.2802C2.79507 10.7148 2.13551 9.91113 1.74604 8.97085C1.35656 8.03057 1.25466 6.99592 1.45321 5.99773C1.65176 4.99953 2.14185 4.08263 2.86151 3.36297C3.58117 2.64332 4.49807 2.15322 5.49626 1.95467C6.49446 1.75612 7.52911 1.85802 8.46939 2.2475C9.40967 2.63697 10.2133 3.29653 10.7788 4.14276C11.3442 4.98898 11.646 5.98388 11.646 7.00163C11.6446 8.36595 11.102 9.67398 10.1372 10.6387C9.17252 11.6034 7.86449 12.146 6.50017 12.1475Z"
+                        fill="#8E8E8E"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Follow -->
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+          <div class="follow">
+            <div class="account">
+              <div class="user">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/10337/10337609.png"
+                  alt=""
+                />
+                <div class="name">
+                  <span><b>upvox_</b></span>
+                  <span>Upvox</span>
+                </div>
+              </div>
+              <button class="btn btn-link">Switch</button>
+            </div>
+            <div class="suggestion">
+              <span>Suggestions for you</span>
+              <span><b>See All</b></span>
+            </div>
+            <div class="account">
+              <div class="user">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/10337/10337609.png"
+                  alt=""
+                />
+                <div class="name">
+                  <span><b>imkir</b></span>
+                  <span>Follows you</span>
+                </div>
+              </div>
+              <button class="btn btn-link">Follow</button>
+            </div>
+            <div class="account">
+              <div class="user">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/10337/10337609.png"
+                  alt=""
+                />
+                <div class="name">
+                  <span><b>organic__al</b></span>
+                  <span>Followed by chirag_singla17</span>
+                </div>
+              </div>
+              <button class="btn btn-link">Follow</button>
+            </div>
+            <div class="account">
+              <div class="user">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/10337/10337609.png"
+                  alt=""
+                />
+                <div class="name">
+                  <span><b>im_gr</b></span>
+                  <span>Followed by chirag_singla17</span>
+                </div>
+              </div>
+              <button class="btn btn-link">Follow</button>
+            </div>
+            <div class="account">
+              <div class="user">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/10337/10337609.png"
+                  alt=""
+                />
+                <div class="name">
+                  <span><b>abh952</b></span>
+                  <span>Follows you</span>
+                </div>
+              </div>
+              <button class="btn btn-link">Follow</button>
+            </div>
+            <div class="account">
+              <div class="user">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/10337/10337609.png"
+                  alt=""
+                />
+                <div class="name">
+                  <span><b>sakbrl</b></span>
+                  <span>Follows you</span>
+                </div>
+              </div>
+              <button class="btn btn-link">Follow</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
