@@ -1,0 +1,82 @@
+:root {
+    background-color: black;
+    color: whitesmoke;
+    margin: 5vw;
+}
+
+h3 {
+    margin: 1vw;
+}
+
+form {
+    display: flex;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        margin: 1vw;
+
+        label {
+            color: rgb(239 228 228);
+            padding-bottom: 0.5vw;
+        }
+
+        input {
+            border: 1px solid rgb(239 228 228);
+            background-color: transparent;
+            color: whitesmoke;
+            font-size: 3cap;
+        }
+    }
+}
+
+.empData {
+    margin: 1vw;
+
+    #employees {
+        .empty {
+            color: gray;
+            margin: 0;
+        }
+
+        .empList {
+            display: flex;
+            align-items: center;
+
+            .empItem {
+                border: 1px solid rgb(239 228 228);
+                border-radius: 10px;
+                padding: 1vw;
+                margin-bottom: 10px;
+                span {
+                    padding: 0 10px;
+                }
+            }
+            
+            button {
+                margin-left: 25px;
+                border-radius: 50px;
+                height: 40px;
+                width: 125px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#msg {
+    .error {
+        color: red;
+    }
+    .success {
+        color: green;
+    }
+}
+
+.submitbtn {
+    padding: 0.5vw 10px ;
+    width: 125px;
+    cursor: pointer;
+    margin: 1vw;
+}
