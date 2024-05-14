@@ -1,0 +1,31 @@
+:root {
+    background-color: black;
+    color: whitesmoke;
+    margin: 5vw;
+}
+
+#msg {
+    border-bottom: 1px solid gray;
+    color: gray;
+    width: fit-content;
+}
+#count {
+    color: white;
+    font-weight: 700;
+}
+
+#error {
+    color: rgb(246, 82, 82);
+}
+
+button {
+    padding: 0.5vw 1vw ;
+    width: 100px;
+    cursor: pointer;
+}
+
+button:last-child {
+    background-color: black;
+    color: rgb(142, 132, 132);
+    border: 1px solid rgb(142, 132, 132);
+}
