@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Enter Email ID" oninput=onEmailChange()>
+    <span class="error" id="eError"></span>
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter Password" oninput=onPasswordChange()>
+    <span class="error" id="ePassword"></span>
+    <span class="success" id="success"></span>
+    <button onclick=onSubmit()>Submit</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

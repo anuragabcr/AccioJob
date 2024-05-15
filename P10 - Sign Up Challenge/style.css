@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+
+    label {
+        margin: 0.25vw;
+    }
+    input {
+        margin: 0.25vw;
+        padding: 0.25vw;
+        width: 200px;
+    }
+    button {
+        width: 75px;
+        padding: 0.25vw;
+        margin: 0.25vw;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .error {
+        color: red;
+    }
+    .success {
+        color: green;
+    }
+}
