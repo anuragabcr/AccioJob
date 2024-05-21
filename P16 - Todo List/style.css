@@ -1,0 +1,73 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2.5vw;
+
+    h2 {
+        text-align: center;
+    }
+    .search {
+        display: flex;
+        justify-content: center;
+
+        input, select {
+            padding: 0.5vw;
+            margin: .25vw;
+            width: 20%;
+        }
+
+        #item {
+            width: 30%;
+        }
+
+        button {
+            padding: 1vw;
+            margin: .25vw;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            width: 10%;
+        }
+    }
+
+    .todays, .future {
+        margin: 1vw;
+        width: 90%;
+
+        p {
+            width: 100%;
+            padding: 0.5vw 2vw;
+            border-radius: 10px;
+            color: whitesmoke;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    .complete {
+        margin: 1vw;
+        width: 90%;   
+
+        p {
+            width: 100%;
+            padding: 0.5vw 2vw;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .empty {
+        color: aquamarine !important;
+        background-color: rgb(221, 86, 113) !important;
+    }
+
+    img {
+        margin-right: 10px;
+        height: 20px;
+        width: 25px;
+        cursor: pointer;
+    }
+}
