@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Food ordering system</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3 col-md-3 col-lg-3">
+          <div class="logo">
+            <img src="https://s3-alpha-sig.figma.com/img/6c30/5666/5f8945b573189c004e90e2728a92eb63?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZPXTl32cv6d56h5jdnjtpLyVZdaTTEsbcA7qiAH1UeKTsDxHRYmZsuQ4mT3opyhOs9jugpX5T08NzUurYOvmhD64yBVYbY~DRX7vUGPbAhjg7JV7PeS4DrL8WXZjEwx857JatAz5lLtmlS5JUfMMM5Fvg0tL1f2uvzWfHVgbhX3i5Cwd~SpQ2J0vQn6EjGraMDQ6I~KYwFCNdaSOBC7YLBOQJYMNLtj2WG8GQhsnFzFxGLBNpDExpqi8UsvfsRpE-7GPfm5e5Cmz0kKf3BARwEfueb7uKvCOGXmmRXLgNn1VFfj~G1ploiJNn~ytBFjPTQoyuKP~17WhK3CcwlA4oQ__" alt="">
+            <h3>Your Restaurant Menu</h3>
+            <p>Your Slogan </p>
+          </div>
+          <div class="quick">
+            <h3>Quick Links</h3>
+            <ol>
+              <li>Home</li>
+              <li>Your Orders</li>
+              <li>Wallet</li>
+              <li>Profile</li>
+              <li>Logout</li>
+            </ol>
+          </div>
+          <div class="more">
+            <h3>More About Us</h3>
+            <ol>
+              <li>Our blog</li>
+              <li>Upcoming Dishes</li>
+              <li>Our Story</li>
+              <li>Social Media Links</li>
+            </ol>
+          </div>
+        </div>
+        <div class="col-9 col-md-9 col-lg-9">
+          <!-- Navbar -->
+          <nav class="navbar navbar-dark bg-dark">
+              <form class="d-flex w-100">
+                <input class="form-control w-75 mx-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-danger mx-2" type="button">Sign Up</button>
+                <button class="btn btn-danger mx-2" type="button">Login</button>
+                <img
+                  src="https://s3-alpha-sig.figma.com/img/6c30/5666/5f8945b573189c004e90e2728a92eb63?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZPXTl32cv6d56h5jdnjtpLyVZdaTTEsbcA7qiAH1UeKTsDxHRYmZsuQ4mT3opyhOs9jugpX5T08NzUurYOvmhD64yBVYbY~DRX7vUGPbAhjg7JV7PeS4DrL8WXZjEwx857JatAz5lLtmlS5JUfMMM5Fvg0tL1f2uvzWfHVgbhX3i5Cwd~SpQ2J0vQn6EjGraMDQ6I~KYwFCNdaSOBC7YLBOQJYMNLtj2WG8GQhsnFzFxGLBNpDExpqi8UsvfsRpE-7GPfm5e5Cmz0kKf3BARwEfueb7uKvCOGXmmRXLgNn1VFfj~G1ploiJNn~ytBFjPTQoyuKP~17WhK3CcwlA4oQ__"
+                  class="rounded-circle mx-2"
+                  height="35"
+                  alt="Black and White Portrait of a Man"
+                  loading="lazy"
+                />
+              </form>
+          </nav>
+          <!-- Hero Card -->
+          <div class="hero-card">
+            <img src="https://s3-alpha-sig.figma.com/img/bfaa/d74b/76ba1256d10f8af33fd5e08b7574087c?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=E-nW~4yLzOadQVT4PgCE65gkOaYBohrtP1-lx9Sp5dXdTnTwkWp-TLHlaZ~j33oOfOprvmlndxlb57~9Ds1XleGAbTC6nEdaGoGwNu2oXSWaZraiRJ7j4Qj0vlNW8HMObwWWn5RJ-KiTWkosJwkUgxVcKiN5EO8bTmOLqspNN-ZsEamVG~blKRQk-efihp6HGjFGcC1EV87o0bI3BBvblLoGyLGeeUn0MnWZHUvuKtszrfN7~4UDjj1jJ~8kjjXAhzHkvGlJG5ZVxqnkBv7MbUM2S6UXMOqMoezXYRbI3lK8DxCv7OsfE0SmJpB5peBdp7OTWP1AyZi6LLwZzPd14g__" alt="">
+          </div>
+          <!-- Menu -->
+          <div class="menu m-2">
+            <h2>Menu</h2>
+            <div class="card-group" id="card-group">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
