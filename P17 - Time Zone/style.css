@@ -1,0 +1,50 @@
+.top {
+  margin: 2vw 5vw;
+
+  .address {
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 0 2vw;
+  
+    div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.bottom {
+  background-color: black;
+  padding: 2vw 5vw;
+  color: white;
+
+  input {
+    width: 100%;
+    margin: 1vw 0;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+  }
+
+  button {
+    padding: 10px 25px;
+    cursor: pointer;
+  }
+
+  .error {
+    color: red;
+    padding: 10px 0;
+  }
+
+  .address {
+    border: 1px solid white;
+    background-color: transparent;
+    padding: 0 2vw;
+    margin: 1vw 0;
+  
+    div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
