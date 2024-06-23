@@ -1,6 +1,6 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 
 interface PincodeData {
   Message: string;
@@ -33,6 +33,7 @@ const Postoffice = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      setLoading(true);
       const response = await fetch(`/api/${pincode}`);
       const result = await response.json();
       setData(result);
@@ -145,4 +146,10 @@ const Postoffice = () => {
   );
 };
 
-export default Postoffice;
+const SuspendedPostOfficeComponent = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <Postoffice />
+  </Suspense>
+);
+
+export default SuspendedPostOfficeComponent;
