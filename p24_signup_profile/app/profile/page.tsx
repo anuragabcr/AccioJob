@@ -2,9 +2,15 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
+interface Profile {
+  name: string;
+  email: string;
+  pass: string;
+}
+
 const Profile = () => {
   const router = useRouter();
-  const [profile, setProfile] = useState({});
+  const [profile, setProfile] = useState<Profile>();
 
   useEffect(() => {
     const data = localStorage.getItem("profile");
