@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeShop.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav class="flex bg-black text-white justify-between p-2">
+      <div class="text-xl pl-5 m-2">
+        <a href="/P20 - Shoping Cart/index.html">MeShop.</a>
+      </div>
+    </nav>
+    <div class="w-11/12 mx-auto mt-5">
+      <div class="flex justify-center font-bold text-3xl m-2">My Profile</div>
+      <input
+        class="w-full border-2 border-solid border-gray-500 p-2 m-2"
+        type="text"
+        id="fname"
+        placeholder="Enter First name"
+      />
+      <input
+        class="w-full border-2 border-solid border-gray-500 p-2 m-2"
+        type="text"
+        id="lname"
+        placeholder="Enter Last name"
+      />
+      <div
+        class="cursor-pointer bg-black px-10 py-2 text-white h-fit w-fit m-2"
+        id="saveInfo"
+      >
+        Save Info
+      </div>
+      <div class="flex justify-center font-bold text-3xl m-2">
+        Edit Password
+      </div>
+      <input
+        class="w-full border-2 border-solid border-gray-500 p-2 m-2"
+        type="password"
+        id="oldPAss"
+        placeholder="Enter Old password"
+      />
+      <input
+        class="w-full border-2 border-solid border-gray-500 p-2 m-2"
+        type="password"
+        id="pass"
+        placeholder="Enter new password"
+      />
+      <input
+        class="w-full border-2 border-solid border-gray-500 p-2 m-2"
+        type="password"
+        id="cpass"
+        placeholder="Enter New Confirm password"
+      />
+      <div
+        class="cursor-pointer bg-black px-10 py-2 text-white h-fit w-fit m-2"
+        id="changePass"
+      >
+        Change Password
+      </div>
+      <div
+        class="cursor-pointer bg-black px-20 py-2 text-white h-fit w-fit m-2"
+        id="logout"
+      >
+        &nbsp;Logout
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
